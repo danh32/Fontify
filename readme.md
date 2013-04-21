@@ -11,6 +11,7 @@ Fontify is an Android library project providing drop-in replacements for all And
 ###Getting fonts in place:
 1) Put your custom font file in Android's assets folder (assets/fonts/helvetica.ttf)  
 2) Put the path to your file in your strings.xml for ease of use:  
+
 	<string name="FONT_HELVETICA">fonts/helvetica</string>
 
 ###Applying fonts:
@@ -28,8 +29,10 @@ Fontify is an Android library project providing drop-in replacements for all And
 
 ####In layouts:  
 1) Add new XML NameSpace to root element of layout:  
+
     xmlns:fontify="http://schemas.android.com/apk/res-auto"  
 2) Use the Fontify subclass of your TextView:  
+
 	<com.danh32.fontify.TextView 
 	    android:layout_width="match_parent"
 		android:layout_height="wrap_content"
