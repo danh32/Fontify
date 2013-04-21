@@ -6,7 +6,22 @@
 	<artifactId>fontify</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>apklib</packaging>
-	<name>fontify</name>
+	
+	<name>Fontify</name>
+	<description>Android TextView subclasses with easy custom font capabilities.</description>
+	<url>https://github.com/danh32/Fontify</url>
+	
+    <licenses>
+      <license>
+        <name>The Apache Software License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        <distribution>repo</distribution>
+      </license>
+    </licenses>
+	
+	<scm>
+		<url>https://github.com/danh32/Fontify</url>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
