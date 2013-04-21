@@ -16,6 +16,7 @@ Fontify is an Android library project providing drop-in replacements for all And
 ###Applying fonts:
 ####In styles/themes:
 1) Declare your style in res/values/styles.xml:  
+
     <style name="CustomTextViewStyle">
         <item name="font">@string/FONT_HELVETICA</item>
     </style>
