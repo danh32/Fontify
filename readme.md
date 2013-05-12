@@ -12,7 +12,7 @@ Fontify is an Android library project providing drop-in replacements for all And
 1) Put your custom font file in Android's assets folder (assets/fonts/helvetica.ttf)  
 2) Put the path to your file in your strings.xml for ease of use:  
 
-	<string name="FONT_HELVETICA">fonts/helvetica</string>
+	<string name="FONT_HELVETICA">fonts/helvetica.ttf</string>
 
 ###Applying fonts:
 ####In styles/themes:
