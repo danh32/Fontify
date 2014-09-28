@@ -14,6 +14,7 @@ import com.danh32.fontify.R;
 public class FontManager {
 	private static FontManager sInstance;
 	private Map<String, Typeface> mCache;
+	private static int sDefaultStyle = R.attr.fontifyStyle;
 
 	private FontManager() {
 		mCache = new HashMap<String, Typeface>();
@@ -45,7 +46,13 @@ public class FontManager {
 	}
 	
 	public static String getFontName(Context c, AttributeSet attrs) {
-		TypedArray arr = c.obtainStyledAttributes(attrs, R.styleable.Fontify);
+		TypedArray arr = c.obtainStyledAttributes(
+			attrs,
+			R.styleable.Fontify,
+			sDefaultStyle,
+			0
+		);
+
 		String fontName = arr.getString(R.styleable.Fontify_font);
 		arr.recycle();
 		return fontName;
