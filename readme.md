@@ -1,21 +1,21 @@
-#Fontify
+# Fontify
 
 Fontify is an Android library project providing drop-in replacements for all Android TextView subclasses, allowing developers to apply custom fonts via xml layouts and/or styles.
 
-##Set Up:
+## Set Up:
 1) Clone Fontify locally  
 2) Import library project into Eclipse  
 3) Add Fontify to your app as a library project  
 
-##Usage:
-###Getting fonts in place:
+## Usage:
+### Getting fonts in place:
 1) Put your custom font file in Android's assets folder (assets/fonts/helvetica.ttf)  
 2) Put the path to your file in your strings.xml for ease of use:  
 
 	<string name="FONT_HELVETICA">fonts/helvetica.ttf</string>
 
-###Applying fonts:
-####In styles/themes:
+### Applying fonts:
+#### In styles/themes:
 1) Declare your style in res/values/styles.xml:  
 
     <style name="CustomTextViewStyle">
@@ -48,7 +48,7 @@ c. In your layouts, use the Fontify subclass of your element as in (2) above, bu
 		    android:layout_height="wrap_content"
 	  />
 
-####In layouts:  
+#### In layouts:  
 1) Add new XML NameSpace to root element of layout:  
 
     xmlns:fontify="http://schemas.android.com/apk/res-auto"  
@@ -59,7 +59,7 @@ c. In your layouts, use the Fontify subclass of your element as in (2) above, bu
 		android:layout_height="wrap_content"
 		fontify:font="@string/FONT_HELVETICA" />
 		
-####In Java:
+#### In Java:
 Use the textView.setFont(String fontPath) or textView.setFont(int resId) method:  
 
 	import com.danh32.fontify.TextView;
@@ -74,7 +74,7 @@ Use the textView.setFont(String fontPath) or textView.setFont(int resId) method:
 		}	
 	}
 
-##License
+## License
 	Copyright 2013 Daniel Hill
 
 	Licensed under the Apache License, Version 2.0 (the "License");
